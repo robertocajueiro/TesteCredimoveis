@@ -24,6 +24,5 @@ public class Nota {
 	private Long numero_nfe;
 	private String status_nfe;
 	private String acsys_usr;
-	private String dt_emissao;
 
 }
