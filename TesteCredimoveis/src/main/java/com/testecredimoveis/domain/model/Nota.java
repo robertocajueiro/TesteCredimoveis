@@ -1,10 +1,14 @@
 package com.testecredimoveis.domain.model;
 
+import java.time.LocalDate;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+
+import com.fasterxml.jackson.annotation.JsonFormat;
 
 import lombok.Data;
 import lombok.EqualsAndHashCode;
@@ -24,6 +28,8 @@ public class Nota {
 	private Long numero_nfe;
 	private String status_nfe;
 	private String acsys_usr;
-	private String dt_emissao;
+	
+	@JsonFormat(pattern = "dd/MM/yyyy")	
+	private LocalDate dt_emissao;
 
 }
