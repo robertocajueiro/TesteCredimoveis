@@ -1,0 +1,23 @@
+package com.testecredimoveis.api.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.testecredimoveis.domain.model.Nota;
+import com.testecredimoveis.domain.repository.NotaRespository;
+
+@RestController
+@RequestMapping(value = "/notas")
+public class NotaController {
+	
+	@Autowired
+	private NotaRespository notaRepository;
+	
+	public List<Nota> listar(){
+		return notaRepository.findAll();
+	}
+
+}

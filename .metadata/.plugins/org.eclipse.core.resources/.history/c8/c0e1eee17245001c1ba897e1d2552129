@@ -1,0 +1,5 @@
+package com.testecredimoveis.domain;
+
+public class Nota {
+
+}

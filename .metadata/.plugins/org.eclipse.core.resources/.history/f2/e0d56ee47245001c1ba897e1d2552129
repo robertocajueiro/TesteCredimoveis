@@ -1,0 +1,24 @@
+package com.testecredimoveis.domain;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+
+@Data
+@Entity
+public class Nota {
+	
+	@Id
+	private Long id_nfe;
+	private String cod_mod_doc_fiscal;
+	private Long numero_nfe;
+	private String status_nfe;
+	private String acsys_usr;
+	
+	
+	
+	
+
+}

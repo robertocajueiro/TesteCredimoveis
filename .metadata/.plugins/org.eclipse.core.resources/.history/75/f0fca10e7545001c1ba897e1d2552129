@@ -1,0 +1,5 @@
+package com.testecredimoveis.api.controller;
+
+public class NotaController {
+
+}
